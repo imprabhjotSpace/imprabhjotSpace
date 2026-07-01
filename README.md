@@ -52,53 +52,15 @@
 
 ---
 
-## 🔄 How I Work — Identity Lifecycle Automation
+## 💡 What I Focus On
 
-```mermaid
-flowchart LR
-    HR["🧑‍💼 HR System<br/>(Joiner/Mover/Leaver)"] --> TRIG["⚙️ PowerShell / Python<br/>Automation"]
-    TRIG --> AD["🏢 Active Directory"]
-    TRIG --> ENTRA["☁️ Entra ID"]
-    AD --> SYNC["🔄 Entra Connect Sync"]
-    SYNC --> ENTRA
-    ENTRA --> LIC["📦 License &amp; Groups"]
-    ENTRA --> INTUNE["📱 Intune Enrollment"]
-    ENTRA --> EXO["📧 Exchange Online Mailbox"]
-    LIC --> AVD["🖥️ AVD / Windows 365<br/>Cloud PC Assigned"]
-    INTUNE --> AVD
-    AVD --> USER["✅ Ready-to-Work User"]
-    EXO --> USER
-```
+> **Identity Lifecycle** — automating joiner / mover / leaver flows across AD and Entra ID so onboarding and offboarding are fast, consistent, and secure.
 
----
+> **Modern Workplace** — delivering AVD and Windows 365 Cloud PCs, managed and secured through Intune.
 
-## 🖥️ Virtual Desktop Delivery — AVD & Windows 365
+> **Messaging & Hybrid** — keeping Exchange Online, Exchange Server, and Hybrid healthy and reliable.
 
-```mermaid
-flowchart TD
-    USER["👤 User Sign-in<br/>(Entra ID)"] --> COND["🛡️ Conditional Access<br/>+ MFA"]
-    COND --> CHOICE{"Desktop Type?"}
-    CHOICE -->|Scalable / Pooled| AVD["🖥️ Azure Virtual Desktop<br/>Host Pools"]
-    CHOICE -->|Dedicated / Simple| W365["☁️ Windows 365<br/>Cloud PC"]
-    AVD --> INTUNE["📱 Intune<br/>Policy &amp; Compliance"]
-    W365 --> INTUNE
-    INTUNE --> APPS["📦 Apps + Security Baseline"]
-    APPS --> READY["✅ Secure Desktop Delivered"]
-```
-
----
-
-## 🤖 RAG AI for IT Ops (POC)
-
-```mermaid
-flowchart LR
-    Q["❓ IT Support Query"] --> EMB["🧮 Embed Query"]
-    EMB --> VDB["🗄️ Vector DB<br/>(Knowledge Chunks)"]
-    VDB --> CTX["📄 Retrieve Relevant Docs"]
-    CTX --> LLM["🧠 LLM"]
-    LLM --> ANS["💬 Grounded Answer"]
-    ANS --> AGENT["🧑‍💻 IT Agent / End User"]
-```
+> **Practical AI** — building RAG-based assistants that turn internal IT knowledge into instant, grounded answers.
 
 ---
 
